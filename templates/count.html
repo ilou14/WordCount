@@ -1,0 +1,18 @@
+<h1>Count</h1>
+<b> says you have </b> {{ number }} <b> words in your text ^^ </b>
+
+<br/>
+
+<h1>Your text</h1>
+{{ text  }}
+
+<br/>
+
+<h1>Each Word's Total Count</h1>
+{% for word , hiscount in sortedwords %}
+{{ word }} <b> appears </b> {{ hiscount }} <b> times</b>
+<br/>
+{% endfor %}
+
+
+{{ worddictionary }}
